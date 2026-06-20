@@ -35,9 +35,15 @@ const Footer = () => {
                 (65) 99989-0234
               </a>
             </li>
-            <li><Mail size={18} /> contato@mendeseortega.adv.br</li>
+            <li>
+              <Mail size={18} /> 
+              <a href="mailto:contato@mendeseortega.adv.br" className={styles.contactLink}>
+                contato@mendeseortega.adv.br
+              </a>
+            </li>
           </ul>
         </div>
+
 
 
 

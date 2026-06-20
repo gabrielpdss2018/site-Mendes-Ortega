@@ -244,7 +244,21 @@
   color: var(--secondary-color);
 }
 
+.emailLink {
+  color: var(--text-color);
+  font-size: 1.05rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.emailLink:hover {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 992px) {
+
 
   .grid {
     grid-template-columns: 1fr;

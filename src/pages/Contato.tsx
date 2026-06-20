@@ -45,11 +45,27 @@ const Contato = () => {
                 <div className={styles.iconCircle}><Mail size={24} /></div>
                 <div>
                   <h3>E-mails</h3>
-                  <p style={{ marginBottom: '4px' }}><strong>Geral:</strong> contato@mendeseortega.adv.br</p>
-                  <p style={{ marginBottom: '4px' }}><strong>Dra. Luitt:</strong> luitt@mendeseortega.adv.br</p>
-                  <p><strong>Dra. Raquel:</strong> raquel@mendeseortega.adv.br</p>
+                  <p style={{ marginBottom: '8px' }}>
+                    <a href="mailto:contato@mendeseortega.adv.br" className={styles.emailLink}>
+                      <Mail size={16} style={{ marginRight: '8px', verticalAlign: 'middle', color: 'var(--secondary-color)' }} />
+                      <strong>Geral:</strong> contato@mendeseortega.adv.br
+                    </a>
+                  </p>
+                  <p style={{ marginBottom: '8px' }}>
+                    <a href="mailto:luitt@mendeseortega.adv.br" className={styles.emailLink}>
+                      <Mail size={16} style={{ marginRight: '8px', verticalAlign: 'middle', color: 'var(--secondary-color)' }} />
+                      <strong>Dra. Luitt:</strong> luitt@mendeseortega.adv.br
+                    </a>
+                  </p>
+                  <p>
+                    <a href="mailto:raquel@mendeseortega.adv.br" className={styles.emailLink}>
+                      <Mail size={16} style={{ marginRight: '8px', verticalAlign: 'middle', color: 'var(--secondary-color)' }} />
+                      <strong>Dra. Raquel:</strong> raquel@mendeseortega.adv.br
+                    </a>
+                  </p>
                 </div>
               </div>
+
 
               <div className={styles.infoItem}>
                 <div className={styles.iconCircle}>
