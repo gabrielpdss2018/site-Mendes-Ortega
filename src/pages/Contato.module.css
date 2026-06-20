@@ -232,7 +232,20 @@
   color: var(--secondary-color);
 }
 
+.whatsappLink {
+  color: var(--text-color);
+  font-size: 1.05rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.whatsappLink:hover {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 992px) {
+
   .grid {
     grid-template-columns: 1fr;
     gap: 60px;

@@ -23,11 +23,22 @@ const Footer = () => {
         <div className={styles.contact}>
           <h3>Contato</h3>
           <ul>
-            <li><Phone size={18} /> (65) 99636-8263</li>
-            <li><Phone size={18} /> (65) 99989-0234</li>
+            <li>
+              <Phone size={18} /> 
+              <a href="https://wa.me/5565996368263" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                (65) 99636-8263
+              </a>
+            </li>
+            <li>
+              <Phone size={18} /> 
+              <a href="https://wa.me/5565999890234" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                (65) 99989-0234
+              </a>
+            </li>
             <li><Mail size={18} /> contato@mendeseortega.adv.br</li>
           </ul>
         </div>
+
 
 
 
