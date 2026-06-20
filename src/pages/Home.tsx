@@ -57,9 +57,11 @@ const Home = () => {
         <div className="container">
           <blockquote>
             "A justiça é a constante e perpétua vontade de dar a cada um o que é seu."
+            <cite className={styles.author}>— Ulpiano, Jurista Romano</cite>
           </blockquote>
         </div>
       </section>
+
     </main>
   );
 };
