@@ -19,10 +19,12 @@ const Contato = () => {
               <div className={styles.infoItem}>
                 <div className={styles.iconCircle}><Phone size={24} /></div>
                 <div>
-                  <h3>Telefone e WhatsApp</h3>
-                  <p>(65) 99636-8263</p>
+                  <h3>Telefones e WhatsApp</h3>
+                  <p style={{ marginBottom: '4px' }}>(65) 99636-8263</p>
+                  <p>(65) 99989-0234</p>
                 </div>
               </div>
+
 
               <div className={styles.infoItem}>
                 <div className={styles.iconCircle}><Mail size={24} /></div>
