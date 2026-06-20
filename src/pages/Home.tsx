@@ -5,14 +5,14 @@ import styles from './Home.module.css';
 const Home = () => {
   return (
     <main>
-      {/* Hero Section */}
+      {/* Seção de Destaque Inicial */}
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
             <span className={styles.subtitle}>Mendes & Ortega Advocacia</span>
             <h1>Excelência jurídica com proximidade e transparência.</h1>
             <p>
-              Defendendo seus direitos com dedicação e expertise em Cáceres e região. 
+              Defendendo seus direitos com dedicação e especialização em Cáceres e região. 
               Soluções jurídicas modernas para questões complexas.
             </p>
             <div className={styles.actions}>
@@ -21,9 +21,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+
       </section>
 
-      {/* Diferenciais Section */}
+      {/* Seção de Diferenciais */}
       <section className={styles.features}>
         <div className="container">
           <div className={styles.sectionHeader}>
@@ -43,9 +44,10 @@ const Home = () => {
             </div>
             <div className={styles.featureCard}>
               <Scale size={40} className={styles.icon} />
-              <h3>Expertise Jurídica</h3>
+              <h3>Experiência Jurídica</h3>
               <p>Dras. especialistas com registro regular na OAB/MT e vasta experiência local.</p>
             </div>
+
           </div>
         </div>
       </section>

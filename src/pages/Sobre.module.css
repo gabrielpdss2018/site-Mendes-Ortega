@@ -22,7 +22,7 @@
 
 .content {
   padding: 120px 0;
-  background-color: var(--bg-color); /* Fundo Off-White */
+  background-color: var(--bg-color); /* Fundo Azul Noturno */
 }
 
 .grid {
@@ -32,7 +32,7 @@
 }
 
 .bio {
-  background-color: var(--bg-secondary); /* Cards brancos */
+  background-color: var(--bg-secondary); /* Cards Azul Noturno Rico */
   padding: 50px;
   border-radius: var(--border-radius);
   border: var(--border-subtle);

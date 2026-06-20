@@ -56,10 +56,10 @@
   gap: 12px;
 }
 
-/* Features Section */
+/* Seção de Diferenciais */
 .features {
   padding: 120px 0;
-  background-color: var(--bg-color); /* Fundo Off-White */
+  background-color: var(--bg-color); /* Fundo Azul Noturno */
 }
 
 .sectionHeader {
@@ -88,7 +88,7 @@
 
 .featureCard {
   padding: 50px 40px;
-  background-color: var(--bg-secondary); /* Cards Brancos */
+  background-color: var(--bg-secondary); /* Cards Azul Noturno Rico */
   border-radius: var(--border-radius);
   text-align: center;
   transition: var(--transition);
@@ -118,7 +118,7 @@
   line-height: 1.7;
 }
 
-/* Quote Section */
+/* Seção de Citação / Frase de Efeito */
 .quote {
   padding: 100px 0;
   background-color: var(--accent-light); /* Fundo champagne suave */

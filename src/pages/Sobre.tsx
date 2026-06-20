@@ -40,9 +40,10 @@ const Sobre = () => {
               </div>
               <p>
                 Com foco na ética e na busca pelas soluções mais eficientes, a Dra. Raquel Mendes dos Santos 
-                dedica sua carreira a oferecer uma advocacia moderna e ágil. Sua expertise permite uma análise 
+                dedica sua carreira a oferecer uma advocacia moderna e ágil. Sua experiência técnica permite uma análise 
                 técnica profunda, garantindo segurança jurídica e proximidade em cada etapa do processo.
               </p>
+
               <div className={styles.specialties}>
                 <h3>Especialidades principais</h3>
                 <ul>
