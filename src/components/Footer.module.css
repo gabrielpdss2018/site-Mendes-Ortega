@@ -1,0 +1,108 @@
+.footer {
+  background-color: var(--bg-darker);
+  color: var(--white);
+  padding-top: 80px;
+  border-top: 1px solid rgba(197, 160, 89, 0.15); /* Divisor dourado sutil no topo do footer */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  padding-bottom: 60px;
+}
+
+.logo {
+  font-family: var(--font-titles);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white) !important;
+  margin-bottom: 20px;
+}
+
+.logo span {
+  color: var(--secondary-color);
+}
+
+.brand p {
+  color: #A0AEC0;
+  max-width: 320px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer h3 {
+  color: var(--secondary-color) !important;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #CBD5E0;
+  font-size: 0.95rem;
+}
+
+.footer ul li svg {
+  color: var(--secondary-color);
+}
+
+.location p {
+  display: flex;
+  gap: 12px;
+  color: #CBD5E0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.location p svg {
+  color: var(--secondary-color);
+  flex-shrink: 0;
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.instagramLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #CBD5E0;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.instagramLink:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+

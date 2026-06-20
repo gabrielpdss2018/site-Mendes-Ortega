@@ -1,0 +1,124 @@
+.header {
+  height: 90px;
+  background-color: rgba(11, 19, 26, 0.85); /* Fundo azul noturno translúcido */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.15); /* Borda sutil champagne */
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-family: var(--font-titles);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color); /* Logo em Azul Noturno */
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: var(--secondary-color); /* E comercial em Dourado */
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav a {
+  font-weight: 600;
+  color: var(--text-color); /* Links em grafite escuro */
+  font-size: 0.95rem;
+  position: relative;
+  padding: 6px 0;
+}
+
+/* Efeito de linha animada sob o link */
+.nav a:not(.btn-primary)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.nav a:not(.btn-primary):hover::after {
+  width: 100%;
+}
+
+.nav a:not(.btn-primary):hover {
+  color: var(--secondary-color);
+}
+
+.mobileMenu {
+  display: none;
+  color: var(--primary-color);
+}
+
+/* Botão de contato no menu */
+.nav .btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--white) !important;
+  padding: 10px 22px;
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(197, 160, 89, 0.25);
+  transition: var(--transition);
+}
+
+.nav .btn-primary:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(197, 160, 89, 0.35);
+}
+
+@media (max-width: 768px) {
+  .mobileMenu {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    padding: 30px 24px;
+    box-shadow: 0 10px 30px rgba(26, 43, 60, 0.08);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+    display: none;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  
+  .nav .btn-primary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,260 @@
+.header {
+  background-color: var(--bg-darker);
+  padding: 100px 0;
+  color: var(--white);
+  text-align: center;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.header h1 {
+  color: var(--white) !important;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.header p {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.content {
+  padding: 120px 0;
+  background-color: var(--bg-color); /* Fundo Off-White */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.iconCircle {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(197, 160, 89, 0.1); /* Dourado translúcido de luxo */
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(197, 160, 89, 0.1);
+  transition: var(--transition);
+}
+
+.infoItem:hover .iconCircle {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.infoItem h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.infoItem p {
+  color: var(--text-light);
+  font-size: 1.05rem;
+}
+
+.formWrapper {
+  background-color: var(--bg-secondary); /* Cards brancos */
+  padding: 50px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: var(--border-subtle);
+  transition: var(--transition);
+}
+
+.formWrapper:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.formWrapper h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.formWrapper > p {
+  color: var(--text-light);
+  margin-bottom: 35px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.inputGroup input, 
+.inputGroup select, 
+.inputGroup textarea {
+  padding: 14px;
+  border: 1px solid var(--bg-tertiary);
+  background-color: var(--bg-color); /* Fundo escuro sutil para inputs */
+  color: var(--text-color);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  transition: var(--transition);
+}
+
+.inputGroup input::placeholder, 
+.inputGroup textarea::placeholder {
+  color: #A0AEC0;
+}
+
+.inputGroup input:focus, 
+.inputGroup select:focus, 
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
+  background-color: var(--bg-secondary);
+}
+
+/* Map Section */
+.mapSection {
+  height: 480px;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mapCardContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none; /* Permite interagir com o mapa por baixo do overlay */
+  background: linear-gradient(to right, rgba(11, 19, 26, 0.85) 30%, rgba(11, 19, 26, 0.2) 70%);
+}
+
+.mapCard {
+  background-color: var(--bg-secondary);
+  padding: 40px;
+  max-width: 400px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-hover);
+  border: var(--border-subtle);
+  pointer-events: auto; /* Permite cliques apenas no card */
+}
+
+.mapCard h4 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.mapCard p {
+  color: var(--text-light);
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.mapCard p:last-of-type {
+  margin-bottom: 25px;
+}
+
+.mapLink {
+  color: var(--secondary-color);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.mapLink:hover {
+  color: var(--accent-color);
+  transform: translateX(4px);
+}
+
+.instagramLink {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.instagramLink:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .mapCardContainer {
+    background: rgba(11, 19, 26, 0.5);
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .mapCard {
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .formWrapper {
+    padding: 30px;
+  }
+}
+
+

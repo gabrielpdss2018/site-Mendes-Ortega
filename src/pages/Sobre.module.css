@@ -1,0 +1,162 @@
+.header {
+  background-color: var(--bg-darker);
+  padding: 100px 0;
+  color: var(--white);
+  text-align: center;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.header h1 {
+  color: var(--white) !important;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.header p {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.content {
+  padding: 120px 0;
+  background-color: var(--bg-color); /* Fundo Off-White */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.bio {
+  background-color: var(--bg-secondary); /* Cards brancos */
+  padding: 50px;
+  border-radius: var(--border-radius);
+  border: var(--border-subtle);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.bio:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.profileHeader {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.18);
+  padding-bottom: 20px;
+}
+
+
+.oab {
+  display: block;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.bio h2 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.bio p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.specialties h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.specialties ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.specialties li {
+  position: relative;
+  padding-left: 25px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.specialties li::before {
+  content: '✦'; /* Detalhe tipo estrela de luxo */
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.values {
+  background-color: var(--accent-light); /* Champagne suave */
+  padding: 100px 0;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.valueItem {
+  background-color: var(--bg-secondary);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  border: var(--border-subtle);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.valueItem:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.valueItem h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.valueItem h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.valueItem p {
+  color: var(--text-light);
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .grid, .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
